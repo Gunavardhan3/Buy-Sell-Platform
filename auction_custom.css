@@ -1,0 +1,187 @@
+/* Auction Custom Styles - auction_custom.css */
+:root {
+    --auction-card-bg: #fff;
+    --auction-card-radius: 18px;
+    --auction-card-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+    --auction-card-width: 320px;
+    --auction-img-height: 190px;
+    --auction-primary: #f7b731;
+    --auction-secondary: #3867d6;
+    --auction-text: #222;
+    --auction-muted: #888;
+    --auction-success: #20bf6b;
+    --auction-price: #1976d2;
+  }
+  
+  .auction-section {
+    max-width: 1300px;
+    margin: 2.5rem auto;
+    padding: 2.5rem 1.5rem;
+    background: #fffdfa;
+    border-radius: 22px;
+    box-shadow: 0 10px 36px rgba(0, 0, 0, 0.08);
+  }
+  
+  .auction-grid {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(var(--auction-card-width), 1fr)
+    );
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+  }
+  
+  .auction-card {
+    background: var(--auction-card-bg);
+    border-radius: var(--auction-card-radius);
+    box-shadow: var(--auction-card-shadow);
+    width: var(--auction-card-width);
+    margin: 0 auto;
+    padding: 0 0 1.7rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1.5px solid #f0f0f0;
+    transition: transform 0.18s, box-shadow 0.18s;
+  }
+  
+  .auction-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.13);
+  }
+  
+  .auction-thumb {
+    width: 100%;
+    height: var(--auction-img-height);
+    background: #f7e6b7;
+    border-radius: 18px 18px 0 0;
+    margin-bottom: 1.2rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .auction-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 18px 18px 0 0;
+    transition: transform 0.2s;
+  }
+  
+  .auction-card:hover .auction-thumb img {
+    transform: scale(1.045);
+  }
+  
+  .auction-title {
+    font-size: 1.18rem;
+    font-weight: 700;
+    color: var(--auction-text);
+    margin: 0.2rem 0 0.15rem 0;
+    text-align: center;
+    letter-spacing: 0.01em;
+  }
+  
+  .auction-seller {
+    font-size: 1.01rem;
+    color: var(--auction-muted);
+    margin-bottom: 0.25rem;
+    text-align: center;
+  }
+  
+  .auction-info {
+    font-size: 1.04rem;
+    color: var(--auction-text);
+    margin-bottom: 0.2rem;
+    text-align: center;
+  }
+  
+  .auction-bids {
+    font-size: 1.01rem;
+    color: var(--auction-secondary);
+    margin-bottom: 0.2rem;
+    text-align: center;
+  }
+  
+  .auction-price {
+    font-size: 1.18rem;
+    font-weight: 700;
+    color: var(--auction-price);
+    margin: 0.4rem 0 0 0;
+    text-align: center;
+  }
+  
+  .auction-btn {
+    display: inline-block;
+    margin-top: 0.8rem;
+    padding: 0.7rem 1.5rem;
+    background: var(--auction-primary);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.08rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  
+  .auction-btn:hover {
+    background: var(--auction-secondary);
+  }
+  
+  .auction-success {
+    color: var(--auction-success);
+    font-weight: bold;
+    font-size: 1.13rem;
+    margin-top: 1.1rem;
+    text-align: center;
+  }
+  
+  .auction-form-custom {
+    background: #fffbe7;
+    border-radius: 14px;
+    padding: 1.7rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    margin-bottom: 2.2rem;
+  }
+  
+  .auction-form-custom label {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.01rem;
+    color: var(--auction-text);
+  }
+  
+  .auction-form-custom input,
+  .auction-form-custom select,
+  .auction-form-custom textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.3rem;
+    border: 1px solid #e2c275;
+    border-radius: 7px;
+    font-size: 1.01rem;
+    background: #fff;
+  }
+  
+  .auction-form-custom button {
+    margin-top: 1.3rem;
+    padding: 0.9rem 1.8rem;
+    background: var(--auction-secondary);
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.13rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .auction-form-custom button:hover {
+    background: var(--auction-primary);
+  }
+  

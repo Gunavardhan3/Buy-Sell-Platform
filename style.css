@@ -1,0 +1,1102 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+/* Center login/register on screen */
+body.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    color: #333;
+  }
+
+/* General page container */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+/* ====================================
+   LOGIN / REGISTER FORMS
+   ==================================== */
+.form-box {
+  display: none;
+  width: 100%;
+  max-width: 450px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.form-box.active {
+  display: block;
+}
+h2 {
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 12px;
+  background: #eee;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+button {
+  width: 100%;
+  padding: 12px;
+  background: #7494ec;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 20px;
+  transition: background 0.5s;
+}
+button:hover {
+  background: #6884d3;
+}
+p {
+  font-size: 14.5px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+p a {
+  color: #7494ec;
+  text-decoration: none;
+}
+p a:hover {
+  text-decoration: underline;
+}
+.error-message {
+  padding: 12px;
+  background: #f8d7da;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #a42834;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ====================================
+   NAVIGATION (Back to Dashboard)
+   ==================================== */
+.topnav {
+  padding: 10px 15px;
+  background: #fafafa;
+  border-bottom: 1px solid #ddd;
+}
+.topnav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* ====================================
+   FORMS ON OTHER PAGES
+   ==================================== */
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+input[type="number"],
+input[type="url"],
+input[type="file"],
+input[type="datetime-local"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  background: #f9f9f9;
+}
+
+/* ====================================
+   TABLES
+   ==================================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+th {
+  background: #f2f2f2;
+}
+
+/* ====================================
+   PURCHASE.PHP STYLING
+   ==================================== */
+
+/* Highlight “All Categories” same as others */
+.sidebar a.active {
+    background-color: #e6edff;
+    font-weight: 600;
+  }
+  
+  /* Center heading */
+  .main-area h2 {
+    font-size: 2rem;
+    color: #074c8c;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* “No items” message */
+  .main-area .no-items {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    margin-top: 2rem;
+  }
+  
+  /* Grid & cards (as before) */
+  .main-area .item-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px,1fr));
+    gap: 1.5rem;
+  }
+  .main-area .item-card {
+    background: rgba(255,255,255,0.85);
+    border-radius: 8px;
+    transition: transform .2s, box-shadow .2s;
+  }
+  .main-area .item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  .main-area .item-card .thumb {
+    padding: 1rem;
+    text-align: center;
+  }
+  .main-area .item-card .thumb img {
+    max-width: 100%;
+    height: auto;
+  }
+  .main-area .item-card h4 {
+    margin: 0.75rem;
+    font-size: 1rem;
+    color: #333;
+  }
+  .main-area .item-card .seller {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0.25rem 0;
+  }
+  .main-area .item-card .price {
+    font-size: 1.2rem;
+    color: #27ae60;
+    font-weight: 700;
+    margin: 0.5rem 0.75rem 0.75rem;
+  }
+  
+  
+/* ===================================================
+   Messages Page – Conversation List Styles Only
+   (leaves chat‑box untouched)
+   =================================================== */
+
+   .messages-page {
+    background: #f5f5f5;
+    padding: 1rem 0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Container */
+  .messages-page .container {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    padding: 0 1rem;
+  }
+  
+  /* Page Heading */
+  .messages-page h2 {
+    text-align: center;
+    color: #074c8c;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+  }
+  
+  /* — Conversation List — */
+  .messages-page__conversation-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .messages-page__conversation-list a {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.8rem 1rem;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .messages-page__conversation-list a i {
+    font-size: 1.4rem;
+    color: #7494ec;
+  }
+  .messages-page__conversation-list a span {
+    flex: 1;
+  }
+  .messages-page__conversation-list a:hover {
+    background: #e8f0fe;
+    transform: translateY(-2px);
+  }
+  
+  /* No Conversations */
+  .messages-page__no-conv {
+    text-align: center;
+    color: #7f8c8d;
+    font-style: italic;
+    margin-top: 2rem;
+    font-size: 1rem;
+  }
+  
+  
+  /* Chat Box */
+  .messages-page__chat-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    height: 300px;
+    overflow-y: auto;
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  /* Individual Message */
+  .messages-page__chat-message {
+    margin-bottom: 0.8rem;
+    max-width: 75%;
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+    word-wrap: break-word;
+  }
+  .messages-page__chat-message.incoming {
+    background: #f1f1f1;
+    margin-right: auto;
+  }
+  .messages-page__chat-message.outgoing {
+    background: #dff7df;
+    margin-left: auto;
+  }
+  
+  /* Sender & Content */
+  .messages-page__sender {
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+    font-size: 0.85rem;
+    color: #2c3e50;
+  }
+  .messages-page__content {
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  /* Timestamp */
+  .messages-page__time {
+    display: block;
+    font-size: 0.7rem;
+    color: #777;
+    text-align: right;
+    margin-top: 0.2rem;
+  }
+  
+  /* Chat Form */
+  .messages-page__chat-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  /* Wider textarea */
+  .messages-page__chat-form textarea {
+    width: 100%;
+    min-height: 120px;
+    resize: vertical;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  
+  /* Smaller send button below textarea */
+  .messages-page__chat-form button.btn {
+    width: 80px;
+    align-self: center;
+    padding: 0.4rem;
+    background: #3498db;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+  }
+  
+  .messages-page__chat-form button.btn:hover {
+    background: #2980b9;
+  }
+  
+  
+  
+  
+
+/*AUCTION*/
+.auction-page {
+    max-width: 960px;
+    margin: 2rem auto;
+    font-family: Arial, sans-serif;
+  }
+  .create-auction, .live-auctions, .upcoming-auctions {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .auction-form label {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .auction-form input,
+  .auction-form select,
+  .auction-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .auction-form button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .auction-form button:hover {
+    background: #0056b3;
+  }
+  .auction-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.5rem;
+  }
+  .auction-card {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+    text-align: center;
+    background: #fff;
+    transition: transform 0.2s;
+  }
+  .auction-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  .auction-card img {
+    max-width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+  .auction-card h4 {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+  .auction-card p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+  }
+  .auction-card.upcoming {
+    opacity: 0.7;
+    background: #fcfcfc;
+  }
+
+  .auction-photo-wrapper {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .auction-photo-wrapper img {
+    max-width: 240px;
+    width: 100%;
+    height: auto;
+  }
+  .auction-quick-bid-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 10px 0;
+  }
+  .auction-quick-bid-buttons button {
+    width: 50px;
+    padding: 4px 0;
+    font-size: 0.75rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .auction-quick-bid-buttons button:hover {
+    background-color: #0056b3;
+  }
+  .auction-submit-btn, .auction-pay-btn {
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .auction-submit-btn:hover, .auction-pay-btn:hover {
+    background-color: #218838;
+  }
+  .auction-error { color: #dc3545; }
+  .auction-success { background: #d4edda; padding: 10px; border-radius: 4px; margin: 15px 0; }
+  .auction-upcoming, .auction-unsold, .auction-ended { font-style: italic; margin: 15px 0; }
+  
+
+
+  
+  .errors {
+    background: #ffe6e6;
+    border: 1px solid #ffb3b3;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+  }
+
+  .error {
+    color: #c00;
+    margin: 0;
+  }
+  
+
+/* ========== PRODUCT DETAIL PAGE UPDATE ========== */
+.detail-page {
+    position: relative;
+    max-width: 640px;      /* a bit wider for readability */
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;      /* remove background-image */
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  }
+  
+  /* Item title */
+  .detail-page h2 {
+    text-align: center;
+    font-size: 2.4rem;     /* larger */
+    color: #074c8c;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Product image */
+  .product-image {
+    display: block;
+    max-width: 100%;
+    max-height: 350px;     /* constrain height */
+    width: auto;
+    height: auto;
+    margin: 0 auto 1.5rem;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  /* Description */
+  .detail-page .description {
+    font-size: 1.1rem;     /* slightly bigger */
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Price in green */
+  .detail-page .price {
+    font-size: 1.6rem;
+    color: #27ae60;        /* emerald green */
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* Horizontal rule */
+  .detail-page hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 2rem 0;
+  }
+  
+  /* Seller section */
+  .detail-page h3 {
+    font-size: 1.4rem;
+    color: #074c8c;
+    margin-bottom: 1rem;
+  }
+  .detail-page .seller-info p {
+    font-size: 1.05rem;
+    color: #333;
+    margin: 0.4rem 0;
+  }
+  
+  /* Back button */
+  .back-button {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    background: #f0f0f0;
+    color: #333;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  .back-button:hover {
+    background: #e0e0e0;
+  }
+  
+  /* Action buttons */
+  .action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  .action-buttons a {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    background: #7494ec;
+    transition: background 0.3s;
+  }
+  .action-buttons a:hover {
+    background: #6884d3;
+  }
+  .action-buttons .error {
+    color: #c00;
+    font-weight: bold;
+    align-self: center;
+  }
+  
+
+
+/* Reset & base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body.dashboard-page {
+    min-height: 100vh;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    /* you can also add dashboard‑specific globals here */
+  }
+  
+  /* Top Bar */
+  .topbar {
+    height: 20vh;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 30px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #7494ec;
+  }
+  
+  .logo {
+    height: 50px;
+    width: auto;
+  }
+  
+  /* Main Wrapper */
+  .main-wrapper {
+    display: flex;
+    height: 80vh;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 30%;
+    background: #f4f6ff;
+    padding: 30px 20px;
+    border-right: 1px solid #ccc;
+    overflow-y: auto;
+  }
+  
+  .sidebar-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .sidebar a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 15px;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    transition: background 0.2s;
+  }
+  
+  .sidebar a:hover {
+    background: #e6edff;
+  }
+  
+  .sidebar a.logout {
+    color: #e74c3c;
+    margin-top: 20px;
+  }
+  
+  /* Main Content Area */
+  .main-area {
+    width: 70%;
+    padding: 40px;
+    background: white;
+  }
+  
+  .content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .iitp-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-top: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .main-wrapper {
+      flex-direction: column;
+    }
+  
+    .sidebar,
+    .main-area {
+      width: 100%;
+      height: auto;
+    }
+  
+    .iitp-image {
+      margin-top: 20px;
+    }
+  }
+
+  /* ===== PROFILE PAGES (scoped under body.profile-page) ===== */
+/* -----------------------------------
+   Top Bar (Dashboard)
+   ----------------------------------- */
+   /* .topbar {
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;   brand on left, icon on right */
+    /* align-items: center;
+    padding: 0 30px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    position: relative;
+    z-index: 10;
+  } */
+  
+  /* Brand (left) stays as is */
+  /* .brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #7494ec;
+  }
+   */
+  /* -----------------------------------
+     Profile Icon (Dashboard)
+     ----------------------------------- */
+  .profile-icon {
+    font-size: 3.6rem;            /* bump up the icon size */
+    color: #074c8c;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .profile-icon:hover {
+    color: #063865;
+  }
+
+body.profile-page {
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    padding: 2rem 1rem;
+  }
+  
+  .profile-card {
+    background: #fff;
+    max-width: 480px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  }
+  
+  .profile-heading {
+    text-align: center;
+    color: #074c8c;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .profile-success {
+    background: #e6f4ea;
+    color: #257a32;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .profile-info p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: #333;
+  }
+  
+  .profile-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .profile-btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background: #074c8c;
+    transition: background 0.3s;
+  }
+  .profile-btn:hover {
+    background: #063865;
+  }
+  
+  .profile-btn-secondary {
+    background: #f0f0f0;
+    color: #333;
+  }
+  .profile-btn-secondary:hover {
+    background: #ddd;
+  }
+  
+  /* Errors on profile_edit */
+  .profile-errors .profile-error {
+    color: #c00;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Profile form inputs */
+  .profile-form label {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  .profile-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+
+/* ================================
+   Bookmarks Page Overrides
+   ================================ */
+   .bookmarks-page {
+    background: #f5f5f5;
+    padding-top: 1rem;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Container */
+  .bookmarks-page .container {
+    max-width: 900px;
+    margin: 0 auto 2rem;
+    padding: 0 1rem;
+  }
+  
+  /* Page Title */
+  .bookmarks-page h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+    color: #074c8c;
+  }
+  
+  /* Grid Layout */
+  .bookmarks-page .bookmark-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px,1fr));
+    gap: 1rem;
+  }
+  
+  /* Card */
+  .bookmarks-page .bookmark-card {
+    position: relative;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .bookmarks-page .bookmark-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  
+  /* Thumbnail */
+  .bookmarks-page .bookmark-card .thumb {
+    background: #fafafa;
+    padding: 0.8rem;
+    text-align: center;
+  }
+  .bookmarks-page .bookmark-card .thumb img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  /* Item Title */
+  .bookmarks-page .bookmark-card h2 {
+    font-size: 1rem;
+    color: #333;
+    margin: 0.5rem 0.8rem 0.3rem;
+  }
+  
+  /* Category Label */
+  .bookmarks-page .bookmark-card .category {
+    font-size: 0.85rem;
+    color: #2c3e50;
+    margin: 0 0.8rem;
+    font-weight: 500;
+  }
+  
+  /* Sold By */
+  .bookmarks-page .bookmark-card .seller {
+    font-size: 0.9rem;
+    color: #34495e;
+    margin: 0.3rem 0.8rem;
+    font-weight: 600;
+  }
+  
+  /* Price */
+  .bookmarks-page .bookmark-card .price {
+    font-size: 1.1rem;
+    color: #27ae60;
+    font-weight: 700;
+    margin: 0.3rem 0.8rem;
+  }
+  
+  /* Status */
+  .bookmarks-page .bookmark-card .status {
+    font-size: 0.9rem;
+    color: #d35400;
+    font-weight: 600;
+    margin: 0.3rem 0.8rem 0.8rem;
+  }
+  
+  /* Remove Button */
+  .bookmarks-page .bookmark-card .btn-remove {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    background: rgba(236,240,241,0.9);
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 50%;
+    color: #c0392b;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+  }
+  .bookmarks-page .bookmark-card .btn-remove:hover {
+    background: #c0392b;
+    color: #fff;
+  }
+  
+  /* No Bookmarks */
+  .bookmarks-page .no-bookmarks {
+    text-align: center;
+    color: #7f8c8d;
+    font-style: italic;
+    margin-top: 2rem;
+  }
+  
+/* ===================================================
+   MY PURCHASES PAGE STYLES (scoped under body.my‑purchases)
+   =================================================== */
+
+/* 1) Only applies when you add my‑purchases to <body> */
+body.my‐purchases {
+    background: #f2f4f8;
+    padding: 2rem 1rem;
+  }
+  
+  /* 2) Card container */
+  .my‑purchase‑container {
+    max-width: 960px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    padding: 2rem;
+  }
+  
+  /* 3) Page heading */
+  .my‑purchase‑container h2 {
+    font-size: 2rem;
+    color: #074c8c;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* 4) Grid wrapper */
+  .my‑purchase‑grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px,1fr));
+    gap: 1.5rem;
+  }
+  
+  /* 5) Individual purchase cards */
+  .my‑purchase‑card {
+    background: #fafbfd;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* 6) Card image */
+  .my‑purchase‑card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  /* 7) Card body */
+  .my‑purchase‑card .purchase‑info {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* 8) Item title */
+  .my‑purchase‑card .purchase‑info h5 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  /* 9) Seller name */
+  .my‑purchase‑card .purchase‑info .seller‑name {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.75rem;
+  }
+  
+  /* 10) Price */
+  .my‑purchase‑card .purchase‑info .purchase‑price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #27ae60;
+    margin-bottom: 1rem;
+  }
+  
+  /* 11) View button */
+  .my‑purchase‑card .purchase‑info .btn‑view {
+    align-self: start;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    color: #074c8c;
+    border: 2px solid #074c8c;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+  }
+  .my‑purchase‑card .purchase‑info .btn‑view:hover {
+    background: #074c8c;
+    color: #fff;
+  }
+  
