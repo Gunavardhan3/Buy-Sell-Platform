@@ -7,5 +7,5 @@ installation Guide:
 3.In chrome type localhost/phymyadmin
 4.create a database "buysell" and import my sql file
 5.In file explorer open Xampp->htdocs
-6.Copy all remaining files in a folder and paste that folder in htdocs with a name EX:"XYZ"
+6.Copy all remaining files in a folder and paste that folder in htdocs with a name EX:"XYZ" , and also add a folder uploads along with assets in this folder
 7.Run localhost/XYZ
